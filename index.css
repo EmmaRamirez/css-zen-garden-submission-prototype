@@ -1,0 +1,117 @@
+/*
+*
+* Name: Jelly
+* Author: Erick Ramirez-Guerrero
+* URL: http://www.twitter.com/Boltaway
+*
+*/
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Questrial|Dosis:200,300,400,500,600,700,800|Fredoka+One|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Slabo+27px|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Nunito:400,300,700|Courgette|Righteous);
+/* Global */
+body {
+  box-sizing: border-box;
+  font-family: "Roboto";
+  margin: 0;
+}
+
+/* Banner */
+header[role="banner"] {
+  background: red;
+  background: -webkit-linear-gradient(left, #28d4b3, #f06cd7);
+  background: linear-gradient(to right, #28d4b3, #f06cd7);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+header[role="banner"]::before {
+  background-attachment: fixed;
+  background-color: white;
+  background-image: url("i/jellyfish.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 75%;
+  content: '';
+  display: block;
+  margin: 1rem;
+  height: -webkit-calc(100vh - 2rem);
+  height: calc(100vh - 2rem);
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: -webkit-calc(100% - 2rem);
+  width: calc(100% - 2rem);
+  z-index: 1;
+}
+
+h1 {
+  background: -webkit-linear-gradient(transparent, rgba(24, 28, 123, 0.92)), -webkit-linear-gradient(left, #28d4b3, #f06cd7);
+  background: linear-gradient(transparent, rgba(24, 28, 123, 0.92)), linear-gradient(to right, #28d4b3, #f06cd7);
+  background-attachment: fixed;
+  background-position: top left, center -100%;
+  font-family: "Roboto Condensed";
+  font-size: 10rem;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+h2 {
+  position: absolute;
+  top: 125%;
+}
+
+.summary p:nth-of-type(1) {
+  background: white;
+  left: 25%;
+  position: absolute;
+  text-align: center;
+  top: 60%;
+  width: 50%;
+  z-index: 3;
+}
+
+.summary p:nth-of-type(1)::before {
+  content: 'definition: (n) ';
+  font-style: italic;
+}
+
+.summary p:nth-of-type(2) {
+  padding: 1rem;
+  text-align: center;
+}
+
+footer {
+  opacity: 0.8;
+  padding: .5rem;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 3;
+}
+
+footer:hover {
+  opacity: 1;
+}
+
+footer a {
+  color: #1d5ba3;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #1d6fa3;
+}
