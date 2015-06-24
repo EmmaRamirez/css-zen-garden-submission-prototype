@@ -6,6 +6,10 @@
 *
 */
 
+$blue: #28d4b3;
+$pink: #f06cd7;
+$d-blue: rgb(29, 91, 163);
+
 /* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Questrial|Dosis:200,300,400,500,600,700,800|Fredoka+One|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Slabo+27px|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Nunito:400,300,700|Courgette|Righteous);
 
@@ -16,10 +20,20 @@ body {
   margin: 0;
 }
 
+a {
+  border-bottom: 1px solid $blue;
+  color: $blue;
+  text-decoration: none;
+  &:hover {
+    border-bottom: 1px solid darken($blue, 10%);
+    color: darken($blue, 10%);
+  }
+}
+
 /* Banner */
 header[role="banner"] {
   background: red;
-  background: linear-gradient(to right, #28d4b3, #f06cd7);
+  background: linear-gradient(to right, $blue, $pink);
   display: flex;
   flex-direction: column;
   
@@ -54,7 +68,6 @@ h1 {
   background-position: top left, center -100%;
   font-family: "Roboto Condensed";
   font-size: 10rem;
-  //display: flex;
   margin: auto;
   position: relative;
   text-align: center;
@@ -68,10 +81,13 @@ h1 {
 }
 
 h2 {
-  //display: flex;
-  
+  //margin: 1rem;
   position: absolute;
-  top: 125%;
+  top: 110%;
+}
+
+.preamble {
+  margin-top: 5rem;
 }
 
 
@@ -91,9 +107,10 @@ h2 {
     }
   }
   p:nth-of-type(2) {
+    font-size: 1.25rem;
     padding: 1rem;
     text-align: center;
-    
+    text-transform: lowercase;
   }
 }
 
@@ -118,10 +135,10 @@ footer {
     opacity: 1;
   }
   a {
-    color: rgb(29, 91, 163);
+    color: $d-blue;
     text-decoration: none;
     &:hover {
-      color: rgb(29, 111, 163);
+      color: darken($d-blue, 10%);
     }
   }
 }
