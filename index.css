@@ -97,11 +97,29 @@ h2 {
   background: -webkit-linear-gradient(left, #28d4b3, #f06cd7);
   background: linear-gradient(to right, #28d4b3, #f06cd7);
   margin-top: 6rem;
-  padding: 2rem 5rem;
+  padding: 1rem 7rem;
 }
 
 .preamble h3 {
+  font-family: "Roboto Condensed";
   font-style: italic;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.preamble p {
+  background-attachment: fixed;
+  background-color: white;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("i/jellyfish.png");
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("i/jellyfish.png");
+  background-position: center, center -20%;
+  background-repeat: repeat, no-repeat;
+  background-size: cover, auto 75%;
+  color: #1d5ba3;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 1rem;
 }
 
 .summary p:nth-of-type(1) {

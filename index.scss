@@ -96,12 +96,28 @@ h2 {
 .preamble {
   color: white;
   background: $bp-gradient;
+  
   margin-top: 6rem;
-  padding: 2rem 5rem;
+  padding: 1rem 7rem;
   h3 {
+    font-family: "Roboto Condensed";
     font-style: italic;
+    font-size: 2rem;
+    font-weight: 100;
   }
   p {
+    background-attachment: fixed;
+    background-color: white;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('i/jellyfish.png');
+    background-position: center, center -20%;
+    background-repeat: repeat, no-repeat;
+    background-size: cover, auto 75%;
+    color: $d-blue;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 1rem;
+    
     
   }
 }
