@@ -9,6 +9,7 @@
 $blue: #28d4b3;
 $pink: #f06cd7;
 $d-blue: rgb(29, 91, 163);
+$bp-gradient: linear-gradient(to right, $blue, $pink);
 
 /* Fonts */
 @import url(http://fonts.googleapis.com/css?family=Questrial|Dosis:200,300,400,500,600,700,800|Fredoka+One|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Slabo+27px|Roboto+Condensed:300italic,400italic,700italic,400,300,700|Nunito:400,300,700|Courgette|Righteous);
@@ -33,7 +34,7 @@ a {
 /* Banner */
 header[role="banner"] {
   background: red;
-  background: linear-gradient(to right, $blue, $pink);
+  background: $bp-gradient;
   display: flex;
   flex-direction: column;
   
@@ -81,13 +82,28 @@ h1 {
 }
 
 h2 {
+  background: $bp-gradient;
+  color: white;
+  font-size: 3rem;
   //margin: 1rem;
+  padding: 1rem;
   position: absolute;
-  top: 110%;
+  text-indent: 1em;
+  top: 107%;
+  width: 100%;
 }
 
 .preamble {
-  margin-top: 5rem;
+  color: white;
+  background: $bp-gradient;
+  margin-top: 6rem;
+  padding: 2rem 5rem;
+  h3 {
+    font-style: italic;
+  }
+  p {
+    
+  }
 }
 
 

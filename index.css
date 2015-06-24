@@ -81,12 +81,27 @@ h1 {
 }
 
 h2 {
+  background: -webkit-linear-gradient(left, #28d4b3, #f06cd7);
+  background: linear-gradient(to right, #28d4b3, #f06cd7);
+  color: white;
+  font-size: 3rem;
+  padding: 1rem;
   position: absolute;
-  top: 110%;
+  text-indent: 1em;
+  top: 107%;
+  width: 100%;
 }
 
 .preamble {
-  margin-top: 5rem;
+  color: white;
+  background: -webkit-linear-gradient(left, #28d4b3, #f06cd7);
+  background: linear-gradient(to right, #28d4b3, #f06cd7);
+  margin-top: 6rem;
+  padding: 2rem 5rem;
+}
+
+.preamble h3 {
+  font-style: italic;
 }
 
 .summary p:nth-of-type(1) {
