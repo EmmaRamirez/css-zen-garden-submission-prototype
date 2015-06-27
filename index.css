@@ -22,6 +22,11 @@ a, .summary p:nth-of-type(2) a, .summary p:nth-of-type(2) a:hover {
   color: white;
 }
 
+.preamble::before, .preamble::after {
+  content: '';
+  display: block;
+}
+
 /* Global */
 body {
   box-sizing: border-box;
@@ -42,6 +47,11 @@ a {
 a:hover {
   border-bottom: 1px solid #20a98f;
   color: #20a98f;
+}
+
+abbr {
+  border-bottom: 1px dotted #333333;
+  cursor: help;
 }
 
 /* Banner */
@@ -107,6 +117,10 @@ h2 {
   width: 25vw;
   z-index: 1;
 }
+h2 abbr {
+  border-bottom: 0 solid;
+  color: #f06cd7;
+}
 
 .summary {
   border: 1px solid #28d4b3;
@@ -159,11 +173,20 @@ h2 {
 .preamble p {
   font-size: 1.25rem;
 }
+.preamble::before {
+  background-attachment: fixed, scroll;
+  background-image: linear-gradient(red, red), url("i/jellyfish-road.svg");
+  background-size: 300px 200px, cover;
+  background-repeat: no-repeat;
+  background-position: center -10%, top left;
+  height: 24rem;
+  left: -50%;
+  position: absolute;
+  width: 50%;
+}
 .preamble::after {
   background: #f06cd7;
-  content: '';
-  display: block;
-  height: 2px;
+  height: 1px;
   left: 20%;
   position: relative;
   width: 60%;

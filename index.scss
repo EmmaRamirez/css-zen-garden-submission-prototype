@@ -31,6 +31,11 @@ $text-c: #333;
   color: white;
 }
 
+%content-block {
+  content: '';
+  display: block;
+}
+
 /* Global */
 body {
   box-sizing: border-box;
@@ -53,6 +58,11 @@ a {
     color: darken($blue, 10%);
   }
   
+}
+
+abbr {
+  border-bottom: 1px dotted $text-c;
+  cursor: help;
 }
 
 /* Banner */
@@ -125,6 +135,10 @@ h2 {
   top: 33%;
   width: 25vw;
   z-index: 1;
+  abbr {
+    border-bottom: 0 solid;
+    color: $pink;
+  }
 }
 
 .summary {
@@ -184,15 +198,27 @@ h2 {
   p {
     font-size: 1.25rem;
   }
+  &::before {
+    background-attachment: fixed, scroll;
+    background-image: linear-gradient(red, red), url('i/jellyfish-road.svg');
+    background-size: 300px 200px, cover;
+    background-repeat: no-repeat;
+    background-position: center -10%, top left;
+    height: 24rem;
+    left: -50%;
+    position: absolute;
+    width: 50%;
+    
+    @extend %content-block;
+  }
   &::after {
     background: $pink;
     
-    content: '';
-    display: block;
-    height: 2px;
+    height: 1px;
     left: 20%;
     position: relative;
     width: 60%;
+    @extend %content-block;
   }
 }
 
