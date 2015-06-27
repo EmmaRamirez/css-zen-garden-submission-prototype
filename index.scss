@@ -21,6 +21,16 @@ $text-c: #333;
   transition: all 350ms ease-in-out;
 }
 
+::selection {
+  background: $pink;
+  color: white;
+}
+
+::-moz-selection {
+  background: $pink;
+  color: white;
+}
+
 /* Global */
 body {
   box-sizing: border-box;
@@ -58,8 +68,8 @@ header[role="banner"] {
   &::before {
     background-attachment: fixed;
     background-color: white;
-    background-image: url('i/jellyfish.png');
-    background-position: center;
+    background-image: url('i/jellyfish.svg');
+    background-position: 50% 25%;
     background-repeat: no-repeat;
     background-size: auto 75%;
     
@@ -74,7 +84,7 @@ header[role="banner"] {
     left: 25%;
     position: absolute;
     top: 0;
-    transform: rotateZ(4deg) scale(.9);
+    transform: rotateZ(-4deg) scale(.9);
     width: calc(100% - 2rem);
     width: 50vw;
     z-index: 1;

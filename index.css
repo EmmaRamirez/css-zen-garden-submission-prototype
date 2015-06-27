@@ -12,6 +12,16 @@ a, .summary p:nth-of-type(2) a, .summary p:nth-of-type(2) a:hover {
   transition: all 350ms ease-in-out;
 }
 
+::selection {
+  background: #f06cd7;
+  color: white;
+}
+
+::-moz-selection {
+  background: #f06cd7;
+  color: white;
+}
+
 /* Global */
 body {
   box-sizing: border-box;
@@ -47,8 +57,8 @@ header[role="banner"] {
 header[role="banner"]::before {
   background-attachment: fixed;
   background-color: white;
-  background-image: url("i/jellyfish.png");
-  background-position: center;
+  background-image: url("i/jellyfish.svg");
+  background-position: 50% 25%;
   background-repeat: no-repeat;
   background-size: auto 75%;
   border-radius: 50%;
@@ -61,7 +71,7 @@ header[role="banner"]::before {
   left: 25%;
   position: absolute;
   top: 0;
-  transform: rotateZ(4deg) scale(0.9);
+  transform: rotateZ(-4deg) scale(0.9);
   width: calc(100% - 2rem);
   width: 50vw;
   z-index: 1;
