@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   border-bottom: 1px solid #28d4b3;
   color: #28d4b3;
@@ -172,6 +176,12 @@ h2 {
   font-size: 1.25rem;
   color: #333;
   line-height: 1.5em;
+}
+
+.participation {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 60rem;
 }
 
 footer {

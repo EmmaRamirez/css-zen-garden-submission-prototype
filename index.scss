@@ -29,6 +29,10 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   border-bottom: 1px solid $blue;
   color: $blue;
@@ -203,7 +207,11 @@ h2 {
 }
 
 
-
+.participation {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 60rem;
+}
 
 
 
