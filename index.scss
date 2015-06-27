@@ -160,6 +160,12 @@ h2 {
     font-family: "Roboto Condensed";
     font-size: 1.5rem;
     font-style: italic;
+    &::first-letter {
+      text-transform: lowercase;
+    }
+    &::before {
+      content: 'This is ';
+    }
   }
   p:nth-of-type(2) {
     a {
@@ -289,8 +295,34 @@ h2 {
     text-transform: uppercase;
   }
   p {
+    color: darken($blue, 30%);
+  }
+}
+
+.requirements {
+  $sad-pink: lighten($pink, 15%);
+  background: $sad-pink;
+  padding: 1rem;
+  
+  h3, p {
+    background: white;
+    margin: 0;
+    padding: 1rem;
+    width: 60%;
     
   }
+  
+  h3 {
+    background: $pink;
+    background: linear-gradient(to left, $sad-pink, $pink, $sad-pink);
+    color: white;
+    font-size: 2.25rem;
+    text-align: center;
+  }
+}
+
+.content-info {
+  
 }
 
 
