@@ -89,6 +89,55 @@ h2 {
   z-index: 1;
 }
 
+.summary {
+  border: 1px solid #28d4b3;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 0 0.5rem rgba(40, 212, 179, 0.5);
+  background: white;
+  margin: 0 auto;
+  margin-top: -1rem;
+  padding: 1rem;
+  position: relative;
+  width: 60%;
+  z-index: 5;
+}
+.summary p {
+  text-align: center;
+}
+.summary p:nth-of-type(1) {
+  font-family: "Roboto Condensed";
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.summary p:nth-of-type(2) a {
+  border: 1px solid #28d4b3;
+  border-radius: 4px;
+  padding: .25rem;
+}
+.summary p:nth-of-type(2) a:hover {
+  background: #28d4b3;
+  color: white;
+}
+
+.preamble {
+  left: 40%;
+  padding: 1rem;
+  position: relative;
+  width: 50%;
+}
+.preamble h3 {
+  font-family: "Roboto Condensed";
+  font-size: 2.5rem;
+}
+.preamble p {
+  font-size: 1.25rem;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 60rem;
+}
+
 footer {
   background: white;
   opacity: 0.8;
