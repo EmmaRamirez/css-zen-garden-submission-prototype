@@ -241,11 +241,15 @@ h2 {
     line-height: 1.5em;
   }
   &::before {
-    background: url('i/jellyfish-question.svg');
-    background-size: cover;
+    background-attachment: local, fixed;
+    background-image: url('i/jellyfish-question.svg'), url('i/question.svg');
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    background-size: cover, 25% 25%;
     height: 30rem;
     position: absolute;
     right: 0;
+    transform: rotateZ(15deg);
     width: 50%;
     @extend %content-block;
   }
@@ -265,6 +269,27 @@ h2 {
   }
   p {
     font-size: 1.25rem;
+  }
+}
+
+.benefits {
+  background: $blue;
+  h3, p {
+    font-size: 1.25rem;
+    line-height: 1.4em;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 60%;
+  }
+  h3 {
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: .5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  p {
+    
   }
 }
 

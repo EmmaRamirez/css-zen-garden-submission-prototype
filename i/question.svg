@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs>
+  <linearGradient y2="0" x2="1" y1="0" x1="0" spreadMethod="pad" id="svg_1">
+   <stop offset="0" stop-color="#f06cd7"/>
+   <stop offset="1" stop-opacity="0.996094" stop-color="#28d4b3"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_43" d="m68.5,77.5c0,2 29,-82 98,-52c69,30 41,106 35,108c-6,2 -70,46 -40,79c30,33 -32,25 -32.5,24.5c0.5,0.5 -13.5,-6.5 -11.5,-30.5c2,-24 12,-74 33,-77c21,-3 40,-21 36,-41c-4,-20 -29,-53 -43,-40c-14,13 -53,14 -47,51c6,37 -29,-1 -29.5,-1.5c0.5,0.5 1.5,-22.5 1.5,-20.5z" fill-opacity="null" stroke-opacity="null" stroke-width="2px" stroke="url(#svg_1)" fill="none"/>
+  <ellipse stroke="url(#svg_1)" ry="12.5" rx="17.5" id="svg_44" cy="269" cx="157" fill-opacity="null" stroke-opacity="null" stroke-width="2px" fill="none"/>
+ </g>
+</svg>
