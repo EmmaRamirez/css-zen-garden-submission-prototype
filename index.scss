@@ -23,7 +23,6 @@ $text-c: #333;
 
 /* Global */
 body {
-  background: $bp-gradient;
   box-sizing: border-box;
   font-family: "Roboto";
   margin: 0;
@@ -151,13 +150,21 @@ h2 {
 }
 
 .preamble {
-  left: 40%;
+  left: 30%;
+  margin: 1rem;
   padding: 1rem;
+  padding-left: 10rem;
   position: relative;
   width: 50%;
+  h3, p {
+  }
   h3 {
+    background-image: linear-gradient(to right, desaturate(lighten($pink, 10%), 10%), white);
+    color: white;
     font-family: "Roboto Condensed";
     font-size: 2.5rem;
+    margin-left: -2rem;
+    padding: .5rem;
     transform: scaleY(1.25);
   }
   p {

@@ -14,7 +14,6 @@ a, .summary p:nth-of-type(2) a, .summary p:nth-of-type(2) a:hover {
 
 /* Global */
 body {
-  background: linear-gradient(to right, #28d4b3, #f06cd7);
   box-sizing: border-box;
   font-family: "Roboto";
   margin: 0;
@@ -126,14 +125,20 @@ h2 {
 }
 
 .preamble {
-  left: 40%;
+  left: 30%;
+  margin: 1rem;
   padding: 1rem;
+  padding-left: 10rem;
   position: relative;
   width: 50%;
 }
 .preamble h3 {
+  background-image: linear-gradient(to right, #efa0e0, white);
+  color: white;
   font-family: "Roboto Condensed";
   font-size: 2.5rem;
+  margin-left: -2rem;
+  padding: .5rem;
   transform: scaleY(1.25);
 }
 .preamble p {
