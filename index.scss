@@ -47,7 +47,6 @@ header[role="banner"] {
   background: $bp-gradient;
   display: flex;
   flex-direction: column;
-  
   height: 100vh;
   position: relative;
   width: 100%;
@@ -151,6 +150,7 @@ h2 {
 
 .preamble {
   left: 30%;
+  line-height: 1.5em;
   margin: 1rem;
   padding: 1rem;
   padding-left: 10rem;
@@ -183,8 +183,9 @@ h2 {
 }
 
 .explanation {
+  margin-left: 10%;
   padding: 1rem;
-  width: 55%;
+  width: 40%;
   
   h3 {
     background-image: linear-gradient(to left, $blue, white);
@@ -196,13 +197,12 @@ h2 {
   }
   p {
     font-size: 1.25rem;
+    color: #333;
+    line-height: 1.5em;
   }
 }
 
-.main {
-  margin: 0 auto;
-  max-width: 60rem;
-}
+
 
 
 

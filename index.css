@@ -126,6 +126,7 @@ h2 {
 
 .preamble {
   left: 30%;
+  line-height: 1.5em;
   margin: 1rem;
   padding: 1rem;
   padding-left: 10rem;
@@ -155,8 +156,9 @@ h2 {
 }
 
 .explanation {
+  margin-left: 10%;
   padding: 1rem;
-  width: 55%;
+  width: 40%;
 }
 .explanation h3 {
   background-image: linear-gradient(to left, #28d4b3, white);
@@ -168,11 +170,8 @@ h2 {
 }
 .explanation p {
   font-size: 1.25rem;
-}
-
-.main {
-  margin: 0 auto;
-  max-width: 60rem;
+  color: #333;
+  line-height: 1.5em;
 }
 
 footer {
