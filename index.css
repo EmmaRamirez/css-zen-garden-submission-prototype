@@ -179,9 +179,19 @@ h2 {
 }
 
 .participation {
+  border: 1px solid #28d4b3;
   margin: 0 auto;
   padding: 1rem;
   max-width: 60rem;
+}
+.participation h3 {
+  color: #28d4b3;
+  font-size: 3rem;
+  text-align: center;
+  -webkit-text-stroke: 1px #20a98f;
+}
+.participation p {
+  font-size: 1.25rem;
 }
 
 footer {

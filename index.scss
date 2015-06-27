@@ -208,9 +208,19 @@ h2 {
 
 
 .participation {
+  border: 1px solid $blue;
   margin: 0 auto;
   padding: 1rem;
   max-width: 60rem;
+  h3 {
+    color: $blue;
+    font-size: 3rem;
+    text-align: center;
+    -webkit-text-stroke: 1px darken($blue, 10%);
+  }
+  p {
+    font-size: 1.25rem;
+  }
 }
 
 
