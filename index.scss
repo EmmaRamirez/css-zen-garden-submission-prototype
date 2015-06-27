@@ -53,14 +53,20 @@ header[role="banner"] {
     background-repeat: no-repeat;
     background-size: auto 75%;
     
+    border-radius: 50%;
+    
     content: '';
     display: block;
     margin: 1rem;
     height: calc(100vh - 2rem);
+    height: 50vw;
     left: 0;
+    left: 25%;
     position: absolute;
     top: 0;
+    transform: rotateZ(4deg) scale(.9);
     width: calc(100% - 2rem);
+    width: 50vw;
     z-index: 1;
     
   }
@@ -78,7 +84,6 @@ h1 {
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  
   z-index: 2;
   
   -webkit-text-fill-color: transparent;
@@ -93,13 +98,13 @@ h2 {
   font-size: 1.75rem;
   font-style: italic;
   font-weight: 100;
-  left: 25%;
+  left: 37.5vw;
   padding: .3rem;
   position: absolute;
   text-align: center;
   top: 33%;
-  width: 50%;
-  z-index: 4;
+  width: 25vw;
+  z-index: 1;
 }
 
 
@@ -107,6 +112,7 @@ h2 {
 
 
 footer {
+  background: white;
   opacity: 0.8;
   padding: .5rem;
   position: absolute;
