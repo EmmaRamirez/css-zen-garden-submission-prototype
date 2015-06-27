@@ -136,6 +136,7 @@ h2 abbr {
 }
 .summary p {
   text-align: center;
+  text-transform: lowercase;
 }
 .summary p:nth-of-type(1) {
   font-family: "Roboto Condensed";
@@ -143,10 +144,13 @@ h2 abbr {
   font-style: italic;
 }
 .summary p:nth-of-type(1)::first-letter {
-  text-transform: lowercase;
+  text-transform: capitalize;
 }
 .summary p:nth-of-type(1)::before {
   content: 'This is ';
+}
+.summary p:nth-of-type(1) abbr {
+  text-transform: uppercase;
 }
 .summary p:nth-of-type(2) a {
   border: 1px solid #28d4b3;
@@ -271,7 +275,6 @@ h2 abbr {
   padding: 1rem;
 }
 .requirements h3, .requirements p {
-  background: white;
   margin: 0;
   padding: 1rem;
   width: 60%;
