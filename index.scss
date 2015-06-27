@@ -240,11 +240,20 @@ h2 {
     color: #333;
     line-height: 1.5em;
   }
+  &::before {
+    background: url('i/jellyfish-question.svg');
+    background-size: cover;
+    height: 30rem;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    @extend %content-block;
+  }
 }
 
 
 .participation {
-  border: 1px solid $blue;
+  border-bottom: 1px solid $blue;
   margin: 0 auto;
   padding: 1rem;
   max-width: 60rem;

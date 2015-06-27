@@ -22,7 +22,7 @@ a, .summary p:nth-of-type(2) a, .summary p:nth-of-type(2) a:hover {
   color: white;
 }
 
-.preamble::before, .preamble::after {
+.preamble::before, .preamble::after, .explanation::before {
   content: '';
   display: block;
 }
@@ -210,9 +210,17 @@ h2 abbr {
   color: #333;
   line-height: 1.5em;
 }
+.explanation::before {
+  background: url("i/jellyfish-question.svg");
+  background-size: cover;
+  height: 30rem;
+  position: absolute;
+  right: 0;
+  width: 50%;
+}
 
 .participation {
-  border: 1px solid #28d4b3;
+  border-bottom: 1px solid #28d4b3;
   margin: 0 auto;
   padding: 1rem;
   max-width: 60rem;
